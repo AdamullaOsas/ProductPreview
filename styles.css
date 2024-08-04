@@ -4,9 +4,8 @@ body {
     justify-content: center;
     margin: 0;
     padding: 0;
-    place-content: center;
     height: 100vh;
-    background-color: #f2eae2;
+    background-color: hsl(30, 38%, 92%);
 }
 
 .container {
@@ -16,7 +15,7 @@ body {
     background-color: white;
     border-radius: 10px;
 }
-.container img {
+.container .mainImg {
     width: 50%;
     height: 100%;
     border-radius: 10px 0 0 10px;
@@ -24,4 +23,77 @@ body {
 
 .container .info {
     width: 50%;
+    margin: 2rem;
+}
+.product,
+.desc {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+.name {
+    margin: 0;
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+}
+
+.desc {
+    letter-spacing: normal;
+    line-height: 2;
+    margin-bottom: 0;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.price h1 {
+    font-family: "Fraunces", sans-serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+    margin: 5px 0;
+}
+
+.price p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: hsl(213, 9%, 39%);
+    font-size: 14px;
+}
+
+button {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-height: 48px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    gap: 8px;
+}
+
+button .cart {
+    width: 16px;
+    height: 16px;
+}
+
+button p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: white;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #1a4032;
+    cursor: pointer;
 }

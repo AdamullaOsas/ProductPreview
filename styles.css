@@ -18,11 +18,13 @@ body {
 .container .mainImg {
     width: 50%;
     height: 100%;
+    background-size: cover;
     border-radius: 10px 0 0 10px;
+    background-image: url("/images/image-product-desktop.jpg");
 }
 
-.container .info {
-    width: 50%;
+.info {
+    width: calc(50% - 4rem);
     margin: 2rem;
 }
 .product,
@@ -96,4 +98,28 @@ button p {
 button:hover {
     background-color: #1a4032;
     cursor: pointer;
+}
+
+@media (max-width: 480px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        min-height: 610px;
+        max-width: 375px;
+        margin-top: 32px;
+    }
+    .container .mainImg {
+        max-height: 240px;
+        background-size: cover;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        background-image: url("/images/image-product-mobile.jpg");
+    }
+
+    .info {
+        width: auto;
+    }
+    .price {
+        margin-top: 20px;
+    }
 }
